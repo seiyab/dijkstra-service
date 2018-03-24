@@ -1,0 +1,10 @@
+[Unit]
+Description=Dijkstra Web API Service
+
+[Service]
+User=app
+ExecStart=/usr/bin/java -jar /home/app/jar/dijkstra-api.jar --spring.profiles.active=product
+Requires=dijkstra-db.service
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Dijkstra Web Service
+
+[Service]
+User=root
+ExecStart=/usr/bin/java -jar /home/app/jar/dijkstra-web.jar --spring.profiles.active=product
+
+[Install]
+WantedBy=multi-user.target

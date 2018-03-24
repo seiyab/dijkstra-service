@@ -1,0 +1,9 @@
+[Unit]
+Description=Dijkstra DB Service
+
+[Service]
+User=app
+ExecStart=/usr/bin/docker start mysql-product
+
+[Install]
+WantedBy=multi-user.target
